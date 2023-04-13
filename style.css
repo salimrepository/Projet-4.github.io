@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
     font-family: 'Shrikhand', cursive;
     text-align: center;
@@ -18,24 +22,27 @@ header h1{
     padding-bottom: 5px;
 }
 
-main{
-    font-family: 'Roboto', sans-serif;
-}
+/******partie ville******/
 
-main h2{
-    font-size: 16px;
-    font-weight: 500;
+.city{
     text-align: center;
     padding-top: 15.5px;
     padding-bottom: 15.5px;
     background: #EAEAEA ;
 }
 
+.ville h2{
+    font-size: 16px;
+    font-weight: 500;  
+}
+
 .ville i{
     margin-right: 17px;
 }
 
-.explorer{
+/******partie exploration******/
+
+.exploration{
     background: #F7F7F7;
     text-align: center;
     padding-bottom: 57px;
