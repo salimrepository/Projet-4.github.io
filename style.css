@@ -85,6 +85,7 @@ header h1{
 
 .fonctionnement{
     background: #FFFFFF;
+    margin-bottom: 68px;
 }
 .fonction h1{
     margin-left: 20px;
@@ -100,8 +101,6 @@ header h1{
    
     padding-top: 25px;
 }
-
-
 
 .choix ul li{
     
@@ -124,6 +123,104 @@ header h1{
     width: 23px;
     text-align: center;
 }
-img{
-    width: 50%;
+
+/******restaurants******/
+
+.les-restaurants{
+    background: #F7F7F7;
+    padding-top: 45px;
+    padding-bottom: 66px;
+    
+}
+
+.restaurants-title{
+    margin-left: 20px;
+}
+
+.restaurants-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restaurants-cards .card {
+    margin-top: 33px;
+    margin-left: 17px;
+    margin-right: 18px;
+    border-radius: 15px;
+    width: 100%;
+    height: 259px;  
+    padding-bottom: 15px;
+    background: #FFFFFF;
+}
+
+
+.restaurants-cards a{
+    color: black;
+}
+
+.restaurants-cards img {
+    width: 100%;
+    height: 174px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.restaurants-cards .card-content {
+    width: 90%;
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+}
+
+.restaurants-cards .card-txt{
+    width: 267px;
+    margin-bottom: 18px ;
+}
+
+.restaurants-cards .card-txt h3{
+    padding-top: 16px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-txt .fa-heart{
+    position: absolute;
+    right: 43px;
+    margin-top: 5px;  
+    font-size: 22px; 
+}
+
+/******pied de page******/
+
+.pied-de-page{
+    font-family: 'Roboto', sans-serif;
+    background: #353535;
+    color: #FFFFFF;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    
+}
+
+.pied-de-page h3{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.pied-de-page ul{
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.pied-de-page .fa-solid{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.pied-de-page li{
+    margin-bottom: 7px;
 }
