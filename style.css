@@ -53,8 +53,7 @@ header h1{
 }
 
 .explorer h1{
-    padding-top: 39.5px;
-    padding-bottom: 15px;
+    padding: 39.5px 58px 15px 42px;
     font-size: 24px;
     font-weight: 700;
 }
@@ -96,15 +95,6 @@ header h1{
     margin-top: 48px;
 }
 
-.choix {
-    display: block;
-    justify-content: center;
-}
-
-.choix li{
-    padding-top: 25px;
-}
-
 .choix ul li{
     
     padding: 28px 38px;
@@ -117,15 +107,25 @@ header h1{
     font-size: 16px;
 }
 
-.choix span{
+
+
+li span{
+    margin-left: -50px;
+    margin-right: 20px;
     color: #FFFFFF;
-    position:  absolute;
-    left: 20px;
     background: #9356DC;
     border-radius: 50%;
-    padding: 3px;
-    width: 23px;
-    text-align: center;
+    padding: 4px 6px 4px 6px;
+}
+
+.fa-solid{
+    margin-right: 26px;
+    color: #7E7E7E;
+    font-size: 20px;
+}
+
+.fa-store{
+    color: #9356DC;
 }
 
 /******restaurants******/
@@ -144,7 +144,7 @@ header h1{
 .restaurants-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
 }
 
 .restaurants-cards .card {
@@ -171,7 +171,7 @@ header h1{
 }
 
 .restaurants-cards .card-content {
-    width: 90%;
+    width: 100%;
     margin-left: 13px;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@ header h1{
 }
 
 .restaurants-cards .card-txt{
-    width: 267px;
+    width: 100%;
     margin-bottom: 18px ;
 }
 
@@ -193,11 +193,27 @@ header h1{
     flex-wrap: wrap;
 }
 
-.card-txt .fa-heart{
+.card-title{
+    width: 100%;
+}
+
+.card-txt span{
     position: absolute;
-    right: 43px;
+    right: 42px;
+    
     margin-top: 5px;  
     font-size: 22px; 
+}
+
+.coeur{
+    display: flex;
+    justify-content: end;
+    margin-right: 45px;
+    margin-top: -20px;
+}
+
+.coeur .fa-heart{
+    font-size: 22px;
 }
 
 /******pied de page******/
@@ -216,10 +232,10 @@ header h1{
     font-size: 18px;
     font-weight: 400;
     margin-left: 15px;
+    padding-bottom: 16px;
 }
 
 .pied-de-page ul{
-    margin-top: 16px;
     margin-left: 15px;
 }
 
@@ -230,4 +246,101 @@ header h1{
 
 .pied-de-page li{
     margin-bottom: 7px;
+}
+
+@media (min-width: 1440px) {
+
+/********fonctionnement********/
+.choix ul{
+    display: flex;
+    justify-content: center;
+}
+
+.choix li{
+    width: 322px;
+}
+
+.fonction h1{
+    margin-left: 180px;
+}
+
+.restaurants-title{
+    padding-left: 180px;
+}
+
+/***********restaurants***********/
+.restaurants{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.restaurants-cards{
+    padding-left: 180px;
+}
+
+.restaurants-cards .card {
+    border-radius: 15px;
+    width: 496px;
+    height: 259px;  
+    padding-bottom: 15px;
+    background: #FFFFFF;
+    margin-left: 0px;
+    margin-right: 91px;
+}
+
+.restaurants-title{
+    margin-left: 0px;
+}
+
+.card-txt span{
+    position: absolute;
+    left: 625px;
+    margin-top: 5px;  
+    font-size: 22px; 
+}
+
+/**********pied de page************/
+.pied-title h3{
+    padding-bottom: 0px;
+    position: relative;
+    bottom: 5px;
+}
+
+.pied-de-page {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    padding-top: 64px;
+    padding-bottom: 31px;
+
+}
+
+.cassetete{
+    display: flex;
+}
+
+.proposer ul{
+    display: flex;
+}
+
+.proposer ul li{
+    font-weight: 500;
+}
+
+.mention ul{
+    display: flex;
+    width: 267px;
+}
+
+.pied-de-page ul li{
+    margin-right: 7px;
+    width: 188px; 
+}
+
+.pied-de-page h3{
+    width: 137px;
+    margin-right:26px;
+}
+
 }
