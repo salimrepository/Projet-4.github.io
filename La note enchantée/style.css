@@ -35,22 +35,20 @@ header h1{
 .image img{
     width: 100%;
     height: 275px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
 }
 
 /******section carte******/
 
-.restaurants-title{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    
-}
-
 .la-note{
     background: #F7F7F7;
     border-radius: 40px 40px 0px 0px;
-    position: relative;
-    top: -40px;
+    padding-bottom: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 285px; 
 }
 
 .restaurants-title h2{
@@ -58,19 +56,13 @@ header h1{
     font-size: 28px;
     font-weight: 400;
     margin-left: 20px;
-    padding-top: 32px;
+    margin-top: 32px;
     margin-bottom: 2px;
-}
-
-.icone {
-    display: flex;
-    justify-content: end;
-    margin-right: 41px;
 }
 
 .fa-heart{
     font-size: 27px;
-    
+    margin-left: 24px;
 }
 
 .repas{
@@ -152,7 +144,7 @@ button{
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
- button:hover{
+button:hover{
     opacity: 0.8;
     cursor: pointer;
     transition: 1s;
@@ -160,7 +152,7 @@ button{
 
 /*******pied de page********/
 
-.pied-de-page{
+.footer{
     font-family: 'Roboto', sans-serif;
     background: #353535;
     color: #FFFFFF;
@@ -168,22 +160,130 @@ button{
     padding-bottom: 15px; 
 }
 
-.pied-de-page h3{
+.footer h3{
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
     margin-left: 15px;
 }
 
-.pied-de-page ul{
+.footer ul{
     margin-top: 16px;
     margin-left: 15px;
 }
 
-.pied-de-page .fa-solid{
+.footer .fa-solid{
     font-size: 12px;
     margin-right: 10px;
 }
 
-.pied-de-page li{
+.footer li{
     margin-bottom: 7px;
 }
+
+@media (min-width: 1440px) {
+
+    header{
+        height: 96px;
+        position: relative;
+        z-index: 3;
+        background-color: #FFFFFF;
+    }
+    
+    header h1{
+        padding-top: 26px;
+    }
+    
+    .fa-arrow-left{
+        top: 40px;
+    }
+    
+    .image{
+        position: absolute;
+        width: 100%;
+        height: 956px;
+        top: -234px;
+    }
+    
+    .image img{
+        z-index: 2;
+        object-fit: cover;
+        top: 250px;
+        height: 462px;  
+    }
+    
+    main{
+        background-color: #FFFFFF;
+        padding-bottom: -80px;
+    }
+    
+    .la-note{
+        margin: 0px 192px 0px 193px;
+        top: 440px;
+    }
+    
+    .restaurants-title{
+        width: 100%;  
+    }
+    
+    .restaurants-title h2{
+        margin-top: 51px;
+        text-align: center;    
+    }
+    
+    .restaurants-cards{
+        padding-left: 210px;
+        padding-right: 211px;
+    }
+    
+    span{
+        right: 245px;
+        font-weight: 700;
+        
+    }
+    
+    .foot-title h3{
+        padding-bottom: 0px;
+        position: relative;
+        bottom: 5px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        padding-top: 64px;
+        padding-bottom: 31px;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        top: 1660px;
+    }
+    
+    .foot-flex{
+        display: flex;
+    }
+    
+    .proposer ul{
+        display: flex;
+        margin-top: 0px;
+    }
+    
+    .proposer ul li{
+        font-weight: 500;
+    }
+    
+    .mention ul{
+        display: flex;
+        width: 267px;
+        margin-top: 0px;
+    }
+    
+    .footer ul li{
+        margin-right: 7px;
+        width: 188px; 
+    }
+    
+    .footer h3{
+        width: 137px;
+        margin-right:26px;
+    }
+    }

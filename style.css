@@ -12,6 +12,7 @@ main{
     font-family: 'Roboto', sans-serif;
 }
 
+
 header{
     font-family: 'Shrikhand', cursive;
     text-align: center;
@@ -242,15 +243,29 @@ li span{
 .pied-de-page .fa-solid{
     font-size: 12px;
     margin-right: 10px;
+    color: #ffffff;
 }
 
 .pied-de-page li{
     margin-bottom: 7px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 
+body{
+    max-width: 2500px;
+    width: 100%;
+}    
 /********fonctionnement********/
+
+header{
+    height: 96px;
+}
+
+header h1{
+    padding-top: 26px;
+}
+
 .choix ul{
     display: flex;
     justify-content: center;
@@ -264,33 +279,48 @@ li span{
     margin-left: 180px;
 }
 
-.restaurants-title{
-    padding-left: 180px;
-}
+
 
 /***********restaurants***********/
-.restaurants{
+
+.les-restaurants{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
+    
+}
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     
 }
 
 .restaurants-cards{
-    padding-left: 180px;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 .restaurants-cards .card {
     border-radius: 15px;
-    width: 496px;
+    width: 30%;
     height: 259px;  
     padding-bottom: 15px;
     background: #FFFFFF;
-    margin-left: 0px;
     margin-right: 91px;
+    margin-left: 0px;
 }
 
+
+
 .restaurants-title{
-    margin-left: 0px;
+   
+    margin-left: 180px;
+    
 }
 
 .card-txt span{
