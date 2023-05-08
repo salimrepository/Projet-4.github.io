@@ -60,6 +60,23 @@ header h1{
     margin-bottom: 2px;
 }
 
+.restaurants-title .fa-solid{
+    position: relative;
+    left: -47px;
+    top: 1px;
+    font-size: 24px;
+    color: transparent;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+.restaurants-title .fa-solid:hover{
+    opacity: 1;
+    transition: 500ms;
+}
+
 .fa-heart{
     font-size: 22px;
     margin-left: 24px;
@@ -93,12 +110,11 @@ header h1{
 }
 
 .restaurants-cards .card-content {
-    width: 90%;
     margin-left: 13px;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    
+    flex-direction: row;
+    overflow: hidden; 
+    cursor: pointer;
 }
 
 .restaurants-cards .card-txt{
@@ -120,9 +136,45 @@ header h1{
 }
 
 span{
-    position: absolute;
-    right: 28px;
+    margin-left: 50px;
     font-weight: 700;
+    opacity: 1;
+}
+
+.price{
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    font-weight: 700;
+    margin-bottom: 13.5px;
+    
+}
+
+
+
+/******cloche******/
+
+.bell{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 20px;
+    background-color: #99E2D0;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-right: -59px;
+    border-radius: 0 15px 15px 0;
+    width: 59px;
+    height: 69px;  
+    padding-bottom: 15px;
+    
+}
+
+.restaurants-cards .card-content:hover{
+    margin-right: 59px;
+    transition: 500ms;
+    overflow: visible;
 }
 
 .button{
@@ -153,6 +205,8 @@ button{
 /*******pied de page********/
 
 .footer{
+    position: relative;
+    top: 1329px;
     font-family: 'Roboto', sans-serif;
     background: #353535;
     color: #FFFFFF;
