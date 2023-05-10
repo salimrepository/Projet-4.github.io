@@ -93,7 +93,67 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
+
+/******animation menu******/
+
+@keyframes appear-menu{
+    0%{
+        translate: -100%;
+        opacity: 0;
+    }
+
+    100%{
+        translate: 00%;
+        opacity: 1;
+    }
+}
+
+.restaurants-cards .card:nth-child(2){
+    animation: appear-menu 1s ;
+    animation-fill-mode: both;
+}
+
+.restaurants-cards .card:nth-child(3){
+    animation: appear-menu 1s 200ms;
+    animation-fill-mode: both;
+}
+.restaurants-cards .card:nth-child(4){
+    animation: appear-menu 1s 400ms;
+    animation-fill-mode: both;
+}
+
+.restaurants-cards .card:nth-child(6){
+    animation: appear-menu 1s 600ms;
+    animation-fill-mode: both;
+}
+
+.restaurants-cards .card:nth-child(7){
+    animation: appear-menu 1s 800ms;
+    animation-fill-mode: both;
+}
+
+.restaurants-cards .card:nth-child(8){
+    animation: appear-menu 1s 1s;
+    animation-fill-mode: both;
+}
+
+.restaurants-cards .card:nth-child(10){
+    animation: appear-menu 1s 1.2s;
+    animation-fill-mode: both;
+}
+
+.restaurants-cards .card:nth-child(11){
+    animation: appear-menu 1s 1.4s;
+    animation-fill-mode: both;
+}
+
+.restaurants-cards .card:nth-child(12){
+    animation: appear-menu 1s 1.6s;
+    animation-fill-mode: both;
+}
+
 
 .restaurants-cards .card  {
     margin-top: 12px;
@@ -104,23 +164,28 @@ header h1{
     height: 69px;  
     padding-bottom: 15px;
     background: #FFFFFF;
-}
-
-.restaurants-cards a{
-    color: black;
+    overflow: hidden;
+    
+    
+    
 }
 
 .restaurants-cards .card-content {
     margin-left: 13px;
     display: flex;
     flex-direction: row;
-    overflow: hidden; 
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    
 }
 
 .restaurants-cards .card-txt{
-    width: 100%;
+    width: 70%;
     margin-bottom: 18px ;
+    
+    
 }
 
 .restaurants-cards .card-txt h3{
@@ -128,12 +193,20 @@ header h1{
     font-weight: 500;
     padding-top: 12px;
     padding-bottom: 5px;
-    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 110%;
 }
 
 .restaurants-cards .card-txt p{
     font-size: 15px;
     font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    
 }
 
 span{
@@ -172,10 +245,13 @@ span{
     
 }
 
+
+
 .restaurants-cards .card-content:hover{
     margin-right: 59px;
     transition: 500ms;
     overflow: visible;
+    
 }
 
 .button{
@@ -204,6 +280,8 @@ button{
     transition: 1s;
 
 }
+
+
 
 /*******pied de page********/
 

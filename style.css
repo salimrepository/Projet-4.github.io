@@ -155,8 +155,6 @@ header h1{
     font-size: 16px;
 }
 
-
-
 li span{
     margin-left: -50px;
     margin-right: 20px;
@@ -207,7 +205,6 @@ li span{
     background: #FFFFFF;
 }
 
-
 .restaurants-cards a{
     color: black;
 }
@@ -253,6 +250,7 @@ li span{
     margin-top: 5px;  
     font-size: 22px; 
 }
+
 
 .heart{
     display: flex;
@@ -391,10 +389,7 @@ header h1{
 .restaurants-cards{
     width: 100%;
     flex-wrap: wrap;
-    column-gap: 91px;
-    
-    
-    
+    column-gap: 91px;    
 }
 
 .restaurants-cards .card {
