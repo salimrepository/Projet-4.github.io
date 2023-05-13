@@ -49,6 +49,7 @@ header h1{
     position: absolute;
     z-index: 2;
     top: 285px; 
+    width: 100%;
 }
 
 .restaurants-title h2{
@@ -72,7 +73,7 @@ header h1{
     opacity: 0;
 }
 
-.restaurants-title .fa-solid:active{
+.restaurants-title .fa-solid:hover{
     opacity: 1;
     transition: 500ms;
     
@@ -164,10 +165,7 @@ header h1{
     height: 69px;  
     padding-bottom: 15px;
     background: #FFFFFF;
-    overflow: hidden;
-    
-    
-    
+    overflow: hidden;  
 }
 
 .restaurants-cards .card-content {
@@ -176,16 +174,11 @@ header h1{
     flex-direction: row;
     cursor: pointer;
     overflow: hidden;
-    text-overflow: ellipsis;
-    
-    
 }
 
 .restaurants-cards .card-txt{
-    width: 70%;
-    margin-bottom: 18px ;
-    
-    
+    margin-bottom: 12px ;
+    overflow: hidden;
 }
 
 .restaurants-cards .card-txt h3{
@@ -194,19 +187,17 @@ header h1{
     padding-top: 12px;
     padding-bottom: 5px;
     text-overflow: ellipsis;
-    overflow: hidden;
     white-space: nowrap;
-    width: 110%;
+    overflow: hidden;
+    
 }
 
 .restaurants-cards .card-txt p{
     font-size: 15px;
     font-weight: 300;
     text-overflow: ellipsis;
-    overflow: hidden;
     white-space: nowrap;
-    
-    
+    overflow: hidden;
 }
 
 span{
@@ -225,7 +216,6 @@ span{
 }
 
 
-
 /******cloche******/
 
 .bell{
@@ -242,17 +232,15 @@ span{
     width: 59px;
     height: 69px;  
     padding-bottom: 15px;
-    
 }
-
-
 
 .restaurants-cards .card-content:hover{
     margin-right: 59px;
     transition: 500ms;
     overflow: visible;
-    
 }
+
+/******bouton******/
 
 .button{
     display: flex;
@@ -280,8 +268,6 @@ button{
     transition: 1s;
 
 }
-
-
 
 /*******pied de page********/
 
@@ -358,6 +344,7 @@ main{
 .le-delice{
     margin: 0px 192px 0px 193px;
     top: 440px;
+    width: auto;
 }
     
 .restaurants-title h2{
@@ -420,5 +407,13 @@ span{
 .footer h3{
     width: 137px;
     margin-right:26px;
+}
+
+.restaurants-cards .card-txt{
+    width: 100%;
+    margin-bottom: 12px ;
+    overflow: hidden;
+    position: static;
+    
 }
 }

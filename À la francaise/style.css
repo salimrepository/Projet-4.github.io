@@ -48,7 +48,8 @@ header h1{
     padding-bottom: 40px;
     position: absolute;
     z-index: 2;
-    top: 285px; 
+    top: 285px;
+    width: 100%; 
 }
 
 .restaurants-title h2{
@@ -161,23 +162,20 @@ header h1{
     height: 69px;  
     padding-bottom: 15px;
     background: #FFFFFF;
-}
-
-.restaurants-cards a{
-    color: black;
+    overflow: hidden;
 }
 
 .restaurants-cards .card-content {
     margin-left: 13px;
     display: flex;
-    flex-direction: row;
-    overflow: hidden; 
+    flex-direction: row; 
     cursor: pointer;
+    overflow: hidden;
 }
 
 .restaurants-cards .card-txt{
-    width: 100%;
-    margin-bottom: 18px ;
+    margin-bottom: 12px;
+    overflow: hidden;
 }
 
 .restaurants-cards .card-txt h3{
@@ -185,12 +183,17 @@ header h1{
     font-weight: 500;
     padding-top: 12px;
     padding-bottom: 5px;
-    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .restaurants-cards .card-txt p{
     font-size: 15px;
     font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 span{
@@ -204,11 +207,8 @@ span{
     align-items: flex-end;
     margin-left: auto;
     font-weight: 700;
-    margin-bottom: 13.5px;
-    
+    margin-bottom: 13.5px; 
 }
-
-
 
 /******cloche******/
 
@@ -336,6 +336,7 @@ button{
     .a-la-francaise{
         margin: 0px 192px 0px 193px;
         top: 440px;
+        width: auto;
     }
     
     .restaurants-title{
