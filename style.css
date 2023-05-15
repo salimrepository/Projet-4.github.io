@@ -309,7 +309,6 @@ li span{
 
 .heart2 .fa-solid:hover {
     opacity: 1;
-    background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     transition: 1s; 
 }
 

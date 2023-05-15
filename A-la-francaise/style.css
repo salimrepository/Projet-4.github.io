@@ -99,12 +99,11 @@ header h1{
 
 @keyframes appear-menu{
     0%{
-        translate: -100%;
+        transform: translate(-100%);
         opacity: 0;
     }
 
     100%{
-        translate: 00%;
         opacity: 1;
     }
 }
@@ -330,7 +329,6 @@ button{
     
     main{
         background-color: #FFFFFF;
-        padding-bottom: -80px;
     }
     
     .a-la-francaise{

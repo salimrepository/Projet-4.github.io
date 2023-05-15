@@ -100,12 +100,11 @@ header h1{
 
 @keyframes appear-menu{
     0%{
-        translate: -100%;
+        transform: translate(-100%);
         opacity: 0;
     }
 
     100%{
-        translate: 00%;
         opacity: 1;
     }
 }
@@ -338,7 +337,6 @@ button:hover{
     
     main{
         background-color: #FFFFFF;
-        padding-bottom: -80px;
     }
     
     .la-note{

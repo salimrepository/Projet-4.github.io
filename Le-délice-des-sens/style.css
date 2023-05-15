@@ -101,12 +101,12 @@ header h1{
 
 @keyframes appear-menu{
     0%{
-        translate: -100%;
+        transform: translate(-100%);
         opacity: 0;
     }
 
     100%{
-        translate: 00%;
+        
         opacity: 1;
     }
 }
@@ -154,7 +154,6 @@ header h1{
     animation: appear-menu 1s 1.6s;
     animation-fill-mode: both;
 }
-
 
 .restaurants-cards .card  {
     margin-top: 12px;
@@ -212,7 +211,6 @@ span{
     margin-left: auto;
     font-weight: 700;
     margin-bottom: 13.5px;
-    
 }
 
 
@@ -338,7 +336,6 @@ header h1{
     
 main{
     background-color: #FFFFFF;
-    padding-bottom: -80px;
 }
 
 .le-delice{
@@ -414,6 +411,5 @@ span{
     margin-bottom: 12px ;
     overflow: hidden;
     position: static;
-    
 }
 }
