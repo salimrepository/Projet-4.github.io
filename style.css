@@ -37,6 +37,8 @@ header h1{
     background-color: #ffffff;
     animation: 1s ease-in 3s forwards loader;
     opacity: 1;
+    position: fixed;
+    top: 0;
   }
   
 .loader-bar {
@@ -159,7 +161,11 @@ li span{
     color: #FFFFFF;
     background: #9356DC;
     border-radius: 50%;
-    padding: 4px 6px 4px 6px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
 }
 
 .fa-solid{
@@ -370,7 +376,7 @@ header h1{
 
 .fonctionnement{
     padding-left: 180px;
-    padding-right: 207px;
+    padding-right: 175px;
 }
 
 .choix ul{
@@ -406,12 +412,13 @@ header h1{
 .restaurants-cards{
     width: 100%;
     flex-wrap: wrap;
-    column-gap: 91px;    
+    column-gap: 91px;
+    justify-content: space-between;    
 }
 
 .restaurants-cards .card {
     border-radius: 15px;
-    width: 45%;
+    width: 45.5%;
     height: 259px;  
     padding-bottom: 15px;
     background: #FFFFFF;
