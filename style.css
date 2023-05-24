@@ -318,10 +318,6 @@ li span{
     transition: 1s; 
 }
 
-.heart2:focus{
-    font-size: 10px;
-}
-
 /******pied de page******/
 
 .footer{
