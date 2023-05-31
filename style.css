@@ -312,6 +312,7 @@ li span{
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
+    transition: 1s;
 }
 
 .heart2 .fa-solid:hover {
